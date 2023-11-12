@@ -54,4 +54,6 @@ int _printf(const char *format, ...)
         return (my_print_out);
 }
 
+int _printf(const char *format, ...);
+
 #endif
