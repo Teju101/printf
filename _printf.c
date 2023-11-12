@@ -33,12 +33,14 @@ int _printf(const char *format, ...)
 			else if (*format == 'c')
 			{
 				char c = va_arg(my_list, int);
+
 				write(1, &c, 1);
 				my_print_out++;
 			}
 			else if (*format == 's')
 			{
 				char *my_str = va_arg(my_list, char*);
+
 				write(1, my_str, strlen(my_str));
 				my_print_out = my_print_out + strlen(my_str);
 			}
