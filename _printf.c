@@ -27,7 +27,6 @@ int _printf(const char *format, ...)
 
 			if (*format == '%')
 			{
-				int c = va_arg(my_list, int);
 				write(1, format, 1);
 				my_print_out++;
 			}
@@ -47,13 +46,4 @@ int _printf(const char *format, ...)
 		format++;
 	}
 	return (my_print_out);
-}
-int main(void)
-{
-	_printf("This is me\n");
-	_printf("a percentage %c\n", 's');
-	_printf("a character %%\n");
-	_printf("a string %s\n", "boy");
-
-	return (0);
 }
