@@ -30,13 +30,13 @@ int _printf(const char *format, ...)
 				write(1, format, 1);
 				my_print_out++;
 			}
-			if (*format == 'c')
+			else if (*format == 'c')
 			{
 				char c = va_arg(my_list, int);
 				write(1, &c, 1);
 				my_print_out++;
 			}
-			if (*format == 's')
+			else if (*format == 's')
 			{
 				char *my_str = va_arg(my_list, char*);
 				write(1, my_str, strlen(my_str));
