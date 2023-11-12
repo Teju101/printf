@@ -12,7 +12,6 @@ int _printf(const char *format, ...)
 
 	if (format == NULL)
 		return (-1);
-
 	va_start(my_list, format);
 	while (*format)
 	{
@@ -24,7 +23,8 @@ int _printf(const char *format, ...)
 		else
 		{
 			format++;
-
+			if (*format == '\0')
+				break;
 			if (*format == '%')
 			{
 				write(1, format, 1);
