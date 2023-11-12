@@ -25,7 +25,7 @@ int _printf(const char *format, ...)
 			format++;
 			if (*format == '\0')
 				break;
-			else if (*format == '%')
+			if (*format == '%')
 			{
 				write(1, format, 1);
 				my_print_out++;
@@ -45,10 +45,11 @@ int _printf(const char *format, ...)
 				while (my_str[str_len] != '\0')
 					str_len++;
 				write(1, my_str, str_len);
-				my_print_out = my_print_out + str_len;
+				my_print_out += str_len;
 			}
 		}
 		format++;
 	}
+	va_end(my_list);
 	return (my_print_out);
 }
