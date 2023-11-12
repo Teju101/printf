@@ -41,8 +41,11 @@ int _printf(const char *format, ...)
 			{
 				char *my_str = va_arg(my_list, char*);
 
-				write(1, my_str, strlen(my_str));
-				my_print_out = my_print_out + strlen(my_str);
+				int str_len = 0;
+				while (my_str[str_len} != '\0')
+					str_len++;
+				write(1, my_str, str_len);
+				my_print_out = my_print_out + str_len);
 			}
 		}
 		format++;
