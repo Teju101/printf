@@ -47,6 +47,12 @@ int _printf(const char *format, ...)
 				write(1, my_str, str_len);
 				my_print_out += str_len;
 			}
+			else if (*format == 'd')
+			{
+				int d = va_arg(my_list, int);
+				write(1, &d, 4);
+				my_print_out++;
+			}
 		}
 		format++;
 	}
