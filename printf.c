@@ -1,7 +1,11 @@
 #include "main.h"
 #include <stdint.h>
 
-
+/**
+ * _printf - print integer
+ * @format: a char
+ * Return: the result
+ */
 int _printf(const char *format, ...)
 {
 	int printed_chars;

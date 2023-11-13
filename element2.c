@@ -1,5 +1,10 @@
 #include "main.h"
 
+/**
+ * p_string - print string
+ * @args: an int
+ * Return: the result
+ */
 int p_string(va_list args)
 {
 	int i;
@@ -14,11 +19,23 @@ int p_string(va_list args)
 		_putchar(s[i]);
 	return (i);
 }
+
+/**
+ * p_percent - print percent
+ * @args: an int
+ * Return: the result
+ */
 int p_percent(__attribute__((unused)) va_list args)
 {
 	_putchar('%');
 	return (1);
 }
+
+/**
+ * p_integer - print integer
+ * @args: an int
+ * Return: the result
+ */
 int p_integer(va_list args)
 {
 	int n;

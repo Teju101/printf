@@ -1,5 +1,10 @@
 #include "main.h"
 
+/**
+ * print_number - print integer
+ * @args: an int
+ * Return: the result
+ */
 int print_number(va_list args)
 {
 	int n;
@@ -29,6 +34,11 @@ int print_number(va_list args)
 	return (len);
 }
 
+/**
+ * print_unsigned_number - print integer
+ * @n: an int
+ * Return: the result
+ */
 int print_unsigned_number(unsigned int n)
 {
 	int check;
@@ -49,6 +59,12 @@ int print_unsigned_number(unsigned int n)
 	}
 	return (len);
 }
+
+/**
+ * p_char - print integer
+ * @args: an int
+ * Return: the result
+ */
 int p_char(va_list args)
 {
 	char value;
