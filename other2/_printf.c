@@ -50,7 +50,7 @@ int _printf(const char *format, ...)
 			else if (*format == 'd')
 			{
 				int d = va_arg(my_list, int);
-				write(1, &d, 4);
+				my_putchar(d);
 				my_print_out++;
 			}
 		}
