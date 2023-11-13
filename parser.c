@@ -31,8 +31,8 @@ int parser(const char *format, conver_t funct_list[], va_list args)
 			{
 				if (format[i + 1] != '\0')
 				{
-					_putchar(format[i]);
-					_putchar(format[i + 1]);
+					my_putchar(format[i]);
+					my_putchar(format[i + 1]);
 					printed_chars = printed_chars + 2;
 				}
 				else
@@ -42,7 +42,7 @@ int parser(const char *format, conver_t funct_list[], va_list args)
 		}
 		else
 		{
-			_putchar(format[i]);
+			my_putchar(format[i]);
 			printed_chars++;
 		}
 	}

@@ -18,7 +18,7 @@ int print_number(va_list args)
 
 	if (n < 0)
 	{
-		len += _putchar('-');
+		len += my_putchar('-');
 		num = n * -1;
 	}
 	else
@@ -27,7 +27,7 @@ int print_number(va_list args)
 		check *= 10;
 	for (; check != 0;)
 	{
-		len += _putchar('0' + num / check);
+		len += my_putchar('0' + num / check);
 		num %= check;
 		check /= 10;
 	}
@@ -53,7 +53,7 @@ int print_unsigned_number(unsigned int n)
 		check *= 10;
 	for (; check != 0;)
 	{
-		len += _putchar('0' + num / check);
+		len += my_putchar('0' + num / check);
 		num %= check;
 		check /= 10;
 	}
@@ -71,6 +71,6 @@ int p_char(va_list args)
 
 	value = va_arg(args, int);
 
-	_putchar(value);
+	my_putchar(value);
 	return (1);
 }

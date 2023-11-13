@@ -16,7 +16,7 @@ int p_string(va_list args)
 		s = "(null)";
 
 	for (i = 0; s[i] != '\0'; i++)
-		_putchar(s[i]);
+		my_putchar(s[i]);
 	return (i);
 }
 
@@ -27,7 +27,7 @@ int p_string(va_list args)
  */
 int p_percent(__attribute__((unused)) va_list args)
 {
-	_putchar('%');
+	my_putchar('%');
 	return (1);
 }
 
