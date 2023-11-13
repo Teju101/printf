@@ -2,7 +2,7 @@
 #include <stdint.h>
 
 
-int _print(const char *format, ...)
+int _printf(const char *format, ...)
 {
 	int printed_chars;
 	conver_t funct_list[] = {
