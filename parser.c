@@ -14,7 +14,7 @@ int parser(const char *format, conver_t funct_list[], va_list args)
 				if (format[i + 1] == funct_list[j].sym[0])
 				{
 					r_val = funct_list[j].f(args);
-					if(r_val == -1)
+					if (r_val == -1)
 						return (-1);
 					printed_chars += r_val;
 					break;
@@ -22,7 +22,7 @@ int parser(const char *format, conver_t funct_list[], va_list args)
 			}
 			if (funct_list[j].sym == NULL && format[i + 1] != ' ')
 			{
-				if ( format[i + 1] != '\0')
+				if (format[i + 1] != '\0')
 				{
 					_putchar(format[i]);
 					_putchar(format[i + 1]);
